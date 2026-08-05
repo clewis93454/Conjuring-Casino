@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://dyki0uywwp5kc"]
 
 [ext_resource type="Script" uid="uid://ccjwa8seo7qcc" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://b36wv5mbp0sdu" path="res://player/player.tscn" id="2_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://cuxrlddqolpwb" path="res://levels/test_level.tscn" id="3_feb5d"]
 
-[node name="Game" type="Node2D" unique_id=665809161]
+[node name="Game" type="Node" unique_id=1446958430]
 script = ExtResource("1_80nbo")
+
+[node name="Sandbox" type="Node2D" parent="." unique_id=620004240]
+
+[node name="Player" parent="Sandbox" unique_id=99582008 instance=ExtResource("2_fc0e3")]
+z_index = 1
+position = Vector2(31, 51)
+
+[node name="TestLevel" parent="Sandbox" unique_id=345945615 instance=ExtResource("3_feb5d")]
