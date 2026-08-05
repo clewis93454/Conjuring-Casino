@@ -118,16 +118,28 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
 size = Vector2(10, 10)
 
-[node name="Player" type="CharacterBody2D" unique_id=99582008]
+[sub_resource type="LabelSettings" id="LabelSettings_g1dw6"]
+font_size = 5
+
+[node name="Player" type="CharacterBody2D" unique_id=99582008 groups=["player"]]
 script = ExtResource("1_onrkg")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=7716320]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=7716320 groups=["player"]]
 zoom = Vector2(6, 6)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1963141062]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1963141062 groups=["player"]]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"move_right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=517834690]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=517834690 groups=["player"]]
 position = Vector2(1, 2)
 shape = SubResource("RectangleShape2D_57qmd")
+
+[node name="InteractLabel" type="Label" parent="." unique_id=1520837549]
+visible = false
+offset_left = 2.0
+offset_top = -17.0
+offset_right = 30.0
+offset_bottom = -10.0
+text = "Interact (E)"
+label_settings = SubResource("LabelSettings_g1dw6")

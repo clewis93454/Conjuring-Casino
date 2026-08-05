@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cwk8ne3igw7ql"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=2048107569]
+
+[node name="Control" type="Control" parent="." unique_id=2061476715]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -34.0
+offset_right = 74.0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Control" unique_id=2019799207]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 24.0
+text = "GOLD: 100g"

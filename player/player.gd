@@ -1,13 +1,15 @@
 extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var interact_label: Label = $InteractLabel
 
 const SPEED: float = 50.0
+
 
 func _ready() -> void:
 	pass
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	handle_input()
 
 func handle_input() -> void:
@@ -25,3 +27,9 @@ func handle_input() -> void:
 
 	velocity = direction * SPEED
 	move_and_slide()
+
+func show_interact_prompt() -> void:
+	interact_label.visible = true
+
+func hide_interact_prompt() -> void:
+	interact_label.visible = false

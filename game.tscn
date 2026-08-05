@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://dyki0uywwp5kc"]
 
 [ext_resource type="Script" uid="uid://ccjwa8seo7qcc" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cwk8ne3igw7ql" path="res://ui.tscn" id="2_7jktm"]
 [ext_resource type="PackedScene" uid="uid://b36wv5mbp0sdu" path="res://player/player.tscn" id="2_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://cuxrlddqolpwb" path="res://levels/test_level.tscn" id="3_feb5d"]
 
 [node name="Game" type="Node" unique_id=1446958430]
 script = ExtResource("1_80nbo")
+
+[node name="CanvasLayer" parent="." unique_id=2048107569 instance=ExtResource("2_7jktm")]
 
 [node name="Sandbox" type="Node2D" parent="." unique_id=620004240]
 
