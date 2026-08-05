@@ -115,23 +115,25 @@ position = Vector2(31, 51)
 
 [node name="TestLevel" parent="Sandbox" unique_id=345945615 instance=ExtResource("3_feb5d")]
 
-[node name="SlotMachineView" type="Node2D" parent="." unique_id=1799696910]
+[node name="SlotMachineView" type="Node" parent="." unique_id=1322103195]
 
-[node name="Camera2D" type="Camera2D" parent="SlotMachineView" unique_id=2052399750]
+[node name="Node2D" type="Node2D" parent="SlotMachineView" unique_id=1672269959]
+
+[node name="Camera2D" type="Camera2D" parent="SlotMachineView/Node2D" unique_id=2052399750]
 zoom = Vector2(1.5, 1.5)
 
-[node name="Body" type="Sprite2D" parent="SlotMachineView" unique_id=2133285786]
+[node name="Body" type="Sprite2D" parent="SlotMachineView/Node2D" unique_id=2133285786]
 position = Vector2(1.0000076, -7.6293945e-06)
 scale = Vector2(1.8014706, 1.8014706)
 texture = ExtResource("5_j5wjh")
 
-[node name="Lever" type="AnimatedSprite2D" parent="SlotMachineView/Body" unique_id=22156667]
+[node name="Lever" type="AnimatedSprite2D" parent="SlotMachineView/Node2D/Body" unique_id=22156667]
 position = Vector2(72.71835, 3.8146973e-06)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
 animation = &"pull"
 frame_progress = 0.94715303
 
-[node name="LeftTicker" type="AnimatedSprite2D" parent="SlotMachineView/Body" unique_id=1642547473]
+[node name="LeftTicker" type="AnimatedSprite2D" parent="SlotMachineView/Node2D/Body" unique_id=1642547473]
 texture_filter = 1
 position = Vector2(-31.085716, -11.65714)
 scale = Vector2(0.72969735, 0.7865043)
@@ -140,7 +142,7 @@ animation = &"spin"
 frame = 1
 frame_progress = 0.1763673
 
-[node name="MiddleTicker" type="AnimatedSprite2D" parent="SlotMachineView/Body" unique_id=1689143771]
+[node name="MiddleTicker" type="AnimatedSprite2D" parent="SlotMachineView/Node2D/Body" unique_id=1689143771]
 texture_filter = 1
 position = Vector2(1.6653023, -11.657139)
 scale = Vector2(0.72969735, 0.7865043)
@@ -148,7 +150,7 @@ sprite_frames = SubResource("SpriteFrames_57qmd")
 animation = &"spin"
 frame_progress = 0.9255248
 
-[node name="RightTicker" type="AnimatedSprite2D" parent="SlotMachineView/Body" unique_id=1999276625]
+[node name="RightTicker" type="AnimatedSprite2D" parent="SlotMachineView/Node2D/Body" unique_id=1999276625]
 texture_filter = 1
 position = Vector2(34.41632, -11.657139)
 scale = Vector2(0.72969735, 0.7865043)

@@ -2,7 +2,7 @@ extends Node
 
 @onready var sandbox: Node2D = $Sandbox
 @onready var slot_machine_view: Node2D = $SlotMachineView
-@onready var slot_machine_camera: Camera2D = $SlotMachineView/Node2D/Camera2D
+@onready var slot_machine_camera: Camera2D = $SlotMachineView/Camera2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

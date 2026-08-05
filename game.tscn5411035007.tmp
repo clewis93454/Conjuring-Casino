@@ -115,7 +115,7 @@ position = Vector2(31, 51)
 
 [node name="TestLevel" parent="Sandbox" unique_id=345945615 instance=ExtResource("3_feb5d")]
 
-[node name="SlotMachineView" type="Node2D" parent="." unique_id=1799696910]
+[node name="SlotMachineView" type="Node2D" parent="." unique_id=2056120677]
 
 [node name="Camera2D" type="Camera2D" parent="SlotMachineView" unique_id=2052399750]
 zoom = Vector2(1.5, 1.5)
