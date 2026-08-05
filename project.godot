@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="Conjuring Casino"
-run/main_scene="res://game.tscn"
+run/main_scene="uid://dyki0uywwp5kc"
 config/features=PackedStringArray("4.7", "Forward Plus")
+
+[autoload]
+
+GameEvents="*uid://c3k3asiw81nqt"
 
 [display]
 
